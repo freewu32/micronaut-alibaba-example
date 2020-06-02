@@ -20,10 +20,6 @@
     <artifactId>micronaut-alibaba-example</artifactId>
     <version>0.1-SNAPSHOT</version>
 
-    <properties>
-        <micronaut-alibaba.version>${parent.version}</micronaut-alibaba.version>
-    </properties>
-
     <repositories>
         <repository>
             <id>rpg-micronaut-alibaba-snapshot</id>
@@ -42,7 +38,17 @@
         <dependency>
             <groupId>com.github.freewu32</groupId>
             <artifactId>micronaut-alibaba-nacos</artifactId>
-            <version>${micronaut-alibaba.version}</version>
+            <version>0.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.micronaut</groupId>
+            <artifactId>micronaut-http-server-netty</artifactId>
         </dependency>
     </dependencies>
 </project>
