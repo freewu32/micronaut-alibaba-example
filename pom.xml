@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <modules>
+        <module>product</module>
+        <module>order</module>
+        <module>account</module>
+    </modules>
+
+    <parent>
+        <groupId>com.github.freewu32</groupId>
+        <artifactId>micronaut-alibaba</artifactId>
+        <version>0.2-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.github.freewu32.example</groupId>
+    <artifactId>micronaut-alibaba-example</artifactId>
+    <version>0.1-SNAPSHOT</version>
+
+    <properties>
+        <micronaut-alibaba.version>${parent.version}</micronaut-alibaba.version>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>rpg-micronaut-alibaba-snapshot</id>
+            <name>snapshot</name>
+            <url>https://rpg-maven.pkg.coding.net/repository/micronaut-alibaba/snapshot/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.freewu32</groupId>
+            <artifactId>micronaut-alibaba-nacos</artifactId>
+            <version>${micronaut-alibaba.version}</version>
+        </dependency>
+    </dependencies>
+</project>
